@@ -12,6 +12,7 @@ public class Pulse : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         //pulseInfo = GameObject.Find("HotSpots/photo01_sphere/pulse");
         //pulseCanvas = GameObject.Find("HotSpots/photo01_sphere/pulse/pulse_canvas");
+
         pulseCanvas.SetActive(false);
     }
 

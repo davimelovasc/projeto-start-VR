@@ -12,7 +12,7 @@ public class Hotspot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler
 	// Update is called once per frame
 	void Update () 
     {
-        transform.Rotate(0, 0.5f, 0);
+        transform.Rotate(0, 0, 0);
 	}
 
     public void OnPointerClick(PointerEventData eventData) 
@@ -23,12 +23,12 @@ public class Hotspot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        transform.DOScale(new Vector3(0.08f, 0.08f, 0.08f), 0.3f);
+        //transform.DOScale(new Vector3(0.08f, 0.08f, 0.08f), 0.3f);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        transform.DOScale(new Vector3(0.05f, 0.05f, 0.05f), 0.3f);
+        //transform.DOScale(new Vector3(0.05f, 0.05f, 0.05f), 0.3f);
     }
 
     public void OnHotspotTransition() 
