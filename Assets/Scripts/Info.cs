@@ -8,11 +8,20 @@ public class Info : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
 {
 
      public GameObject canvasInformation;
+     public Text information;
+     public Text informationModify;
+
+    void Start()
+    {
+        
+    }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, 1, 0);       
+        transform.Rotate(0, 1, 0);
+        information.text = informationModify.text;
+        information.fontSize = informationModify.fontSize;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
